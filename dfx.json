@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "docicpex_backend": {
+      "main": "src/docicpex_backend/main.mo",
+      "type": "motoko"
+    },
+    "docicpex_frontend": {
+      "dependencies": [
+        "docicpex_backend"
+      ],
+      "source": [
+        "src/docicpex_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "docicpex_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
